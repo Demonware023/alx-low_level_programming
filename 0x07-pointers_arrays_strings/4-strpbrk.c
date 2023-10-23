@@ -14,7 +14,6 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-
 	while (*s != '\0')
 	{
 		char *ptr = accept;
@@ -29,6 +28,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 		s++;
 	}
-
 	return (NULL);
 }
