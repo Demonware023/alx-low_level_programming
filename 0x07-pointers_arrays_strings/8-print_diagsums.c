@@ -6,10 +6,6 @@
   *
   * @a: pointer of the array of the square matrix
   *
-  * @primary_sum: the sum of primary diagonal
-  *
-  * @second_sum: the sum of second diagonal
-  *
   * @size: size of the square matrix
   *
   * Return: void
