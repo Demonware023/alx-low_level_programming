@@ -10,28 +10,29 @@
 
 int is_prime_number(int n)
 {
-	int i;
+	int prime_number(int n, int div);
 
-	if (n <= 1)
+	int div = 2;
+
+	return (prime_number(div, n));
+}
+
+int prime_number(int n, int div)
+{
+	if (n < 2)
 	{
 		return (0);
 	}
-	if (n == 2)
+	if (n % n == 0 || n % 1 == 0)
+	{
+		return (0);
+	}
+	if (prime_number(div, n) != 0)
 	{
 		return (1);
 	}
-	if (n % 2 == 0)
+	else
 	{
 		return (0);
 	}
-
-	for (i = 3 ; i * i <= n ; i += 2)
-	{
-		if (n % i == 0)
-		{
-			return (0);
-		}
-	}
-
-	return (1);
 }
