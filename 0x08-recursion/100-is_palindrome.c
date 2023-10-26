@@ -4,7 +4,7 @@
 /**
   * is_palindrome - checks is the string is an empty string
   *
-  * @s - string
+  * @s: string
   *
   * Return: 1 or 0
   */
