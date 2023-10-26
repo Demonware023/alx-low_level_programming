@@ -5,6 +5,8 @@
   *
   * @n: number to be checked
   *
+  * @prime_number: new function
+  *
   * Return: 1 or 0 Always success
   */
 
