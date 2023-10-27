@@ -5,9 +5,9 @@
 /**
   * main - write a program that multiplies two numbers
   *
-  * @argc - argument count
+  * @argc: argument count
   *
-  * @argv - argument vector
+  * @argv: argument vector
   *
   * Return: 0;
   */
