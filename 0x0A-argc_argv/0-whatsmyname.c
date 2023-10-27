@@ -4,7 +4,9 @@
 /**
   * main - write a program that prints its name
   *
-  * @i =  index for the for loop
+  * @argc: argument count
+  *
+  * @argv: argument vector
   *
   * Return: 0
   */
