@@ -3,9 +3,9 @@
 #include <stddef.h>
 
 /**
-  * *_strdup - rteurns a pointer to a newly allocated space & copies string parameter
+  * *_strdup - rteurns a pointer to a new space & copies string parameter
   *
-  * *str: string to be duplicated
+  * @str: string to be duplicated
   *
   * Return: NULL or Success
   */
@@ -23,7 +23,7 @@ char *_strdup(char *str)
 
 	ptrStr = malloc((str_len * sizeof(char)) + 1);
 
-	if (str == NULL)
+	if (ptStr == NULL)
 	{
 		return (NULL);
 	}
