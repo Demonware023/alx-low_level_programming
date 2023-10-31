@@ -29,11 +29,6 @@ char *create_array(unsigned int size, char c)
 		ptrArray[i] = c;
 	}
 
-	if (ptrArray == NULL)
-	{
-		return (NULL);
-	}
-
 	return (ptrArray);
 	free(ptrArray);
 }
