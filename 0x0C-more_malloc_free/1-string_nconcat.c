@@ -5,18 +5,18 @@
 /**
   * *string_nconcat - write a function that concatenates two strings
   *
-  * @s1 - first string
+  * @s1: first string
   *
-  * @s2 - string
+  * @s2: string
   *
-  * @n - n bytes of string 2
+  * @n: n bytes of string 2
   *
   * Return: NULL or ptr
   */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *ptrNew_string;
+	char *ptr;
 	unsigned int i, j, len1 = 0, len2 = 0;
 
 	if (s1 == NULL)
@@ -42,23 +42,23 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = len2;
 	}
 
-	ptrNew_string = malloc(sizeof(char) * (len1 + n + 1));
-	if (ptrNew_string == NULL)
+	ptr = malloc(sizeof(char) * (len1 + n + 1));
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
 
 	for (i = 0 ; i < len1 ; i++)
 	{
-		ptrNew_string[i] = s1[i];
+		ptr[i] = s1[i];
 	}
 	for (j = 0 ; j < n ; j++)
 	{
-		ptrNew_string[i] = s2[j];
+		ptr[i] = s2[j];
 	}
 
-	ptrNew_string[i] = '\0';
+	ptr[i] = '\0';
 
-	return (ptrNew_string);
-	free(ptrNew_string);
+	return (ptr);
+	free(ptr);
 }
