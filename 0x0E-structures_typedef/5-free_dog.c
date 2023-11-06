@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-  * free_dogs - write a function that frees dogs
+  * free_dog - write a function that frees dogs
   *
   * @d: pointer
   *
