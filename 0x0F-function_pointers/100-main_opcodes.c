@@ -37,7 +37,7 @@ int main(int argc, char **argv)
 	if (argc != 2)
 	{
 		printf("Error\n");
-		exit(1);
+		return (1);
 	}
 
 	int num_bytes = atoi(argv[1]);
@@ -45,7 +45,7 @@ int main(int argc, char **argv)
 	if (num_bytes < 0)
 	{
 		printf("Error\n");
-		exit(2);
+		return (2);
 	}
 
 	print_opcodes((char *)main, num_bytes);
