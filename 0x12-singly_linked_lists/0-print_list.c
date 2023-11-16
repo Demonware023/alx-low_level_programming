@@ -29,5 +29,5 @@ size_t print_list(const list_t *h)
 
 	}
 
-	return(node);
+	return (node);
 }
