@@ -12,7 +12,7 @@
 
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *current = *head;
+	listint_t *next = *head;
 	listint_t *prev = NULL;
 
 	if (*head == NULL)
@@ -20,17 +20,18 @@ listint_t *reverse_listint(listint_t **head)
 		return (NULL);
 	}
 	/* Tranverse the linked list */
-	while (current != NULL)
+	while (next != NULL)
 	{
-		/* Set the next node in a temporary variable */
-		listint_t *temp = current->next;
-		/* Reverse the direction of the current node by setting */
+		/* Store the next node in the next variable b4 */
+		/* we change the next pointer to the current node */
+		next = (*head)->next;
+		/* Reverse the direction of the head node by setting */
 		/* its next pointer to point to the previous node */
 		/* (reversing the link) */
-		current->next = prev;
-		/* Move the prev and current pointers one step */
-		prev = current;
-		current = temp;
+		(*head)->next = prev;
+		/* Move the prev and head pointers one step */
+		prev = *head;
+		*head = next;
 	}
 	/* Update the head pointer to point to the new first node of the list. */
 	*head = prev;
