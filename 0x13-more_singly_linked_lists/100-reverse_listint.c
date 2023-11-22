@@ -14,7 +14,6 @@ listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *current = *head;
 	listint_t *prev = NULL;
-	listint_t *nextNode;
 
 	if (*head == NULL)
 	{
@@ -24,14 +23,14 @@ listint_t *reverse_listint(listint_t **head)
 	while (current != NULL)
 	{
 		/* Set the next node in a temporary variable */
-		nextNode = current->next;
+		listint_t *temp = current->next;
 		/* Reverse the direction of the current node by setting */
 		/* its next pointer to point to the previous node */
 		/* (reversing the link) */
 		current->next = prev;
 		/* Move the prev and current pointers one step */
 		prev = current;
-		current = nextNode;
+		current = temp;
 	}
 	/* Update the head pointer to point to the new first node of the list. */
 	*head = prev;
