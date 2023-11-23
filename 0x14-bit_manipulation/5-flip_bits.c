@@ -2,14 +2,11 @@
 #include <stdio.h>
 
 /**
-  * flip_bits - write a function tat returns the number of bits you-
-  * would need to flip to get from one number to another.
+  * count_set_bits - counts the number of bits in its binary represen.
   *
-  * @n: numbers to flip
+  * @num: Loop
   *
-  * @m: numbers to flip.
-  *
-  * Return: number of bits.
+  * Return: count
   */
 
 unsigned int count_set_bits(unsigned long int num)
@@ -30,6 +27,17 @@ unsigned int count_set_bits(unsigned long int num)
 
 	return (count);
 }
+
+/**
+  * flip_bits - Write a function that returns the number of bits you
+  * would need to flip to get from one number to another.
+  *
+  * @n: numbers to check
+  *
+  * @m: number to check
+  *
+  * Return: number of bits.
+  */
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
