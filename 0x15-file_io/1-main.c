@@ -8,8 +8,6 @@
  * Return: Always 0.
  */
 
-int create_file();
-
 int main(int ac, char **av)
 {
     int res;
