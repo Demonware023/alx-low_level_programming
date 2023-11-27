@@ -7,9 +7,6 @@
  *
  * Return: Always 0.
  */
-
-ssize_t read_textfile();
-
 int main(int ac, char **av)
 {
     ssize_t n;
