@@ -1,9 +1,17 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-#include <fcntl.h>
-#include <unistd.h>
+#include <stdlib.h>
+
+/**
+  * create_file - Create a function that creates a file.
+  *
+  * @filename: name of the file to be created.
+  *
+  * @text_content: text content.
+  *
+  * Return: NULL or 0
+  */
 
 int create_file(const char *filename, char *text_content)
 {
