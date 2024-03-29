@@ -9,17 +9,17 @@ RM = rm -f
 all: $(NAME)
 
 $(NAME): $(OBJ)
-    $(CC) $(OBJ) -o $(NAME)
+	   $(CC) $(OBJ) -o $(NAME)
 
 clean:
-    $(RM) *~ $(NAME)
+	$(RM) *~ $(NAME)
 
 oclean:
-    $(RM) $(OBJ)
+	$(RM) $(OBJ)
 
 fclean: clean oclean
 
 re: fclean all
 
 %.o: %.c
-    $(CC) -c -o $@ $<
+	$(CC) -c -o $@ $<
